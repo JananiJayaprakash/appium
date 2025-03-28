@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-27T18:00:22 IST" name="Default suite" finished-at="2025-03-27T18:01:34 IST" duration-ms="72346">
+    <groups>
+    </groups>
+    <test started-at="2025-03-27T18:00:22 IST" name="Default test" finished-at="2025-03-27T18:01:34 IST" duration-ms="72346">
+      <class name="RaaOnlineProject01.Raaonline.SideBar">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.SideBar@765d7657]" started-at="2025-03-27T18:00:22 IST" name="configureAppium" finished-at="2025-03-27T18:00:29 IST" duration-ms="7431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.SideBar@765d7657]" started-at="2025-03-27T18:00:29 IST" name="LoginPage" finished-at="2025-03-27T18:00:48 IST" duration-ms="18497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="SidebarPage()[pri:2, instance:RaaOnlineProject01.Raaonline.SideBar@765d7657]" started-at="2025-03-27T18:00:48 IST" name="SidebarPage" finished-at="2025-03-27T18:01:34 IST" duration-ms="45916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SidebarPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.SideBar@765d7657]" started-at="2025-03-27T18:01:34 IST" name="tearDown" finished-at="2025-03-27T18:01:34 IST" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RaaOnlineProject01.Raaonline.SideBar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
