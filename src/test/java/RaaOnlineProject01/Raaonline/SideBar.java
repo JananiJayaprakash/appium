@@ -22,7 +22,7 @@ public class SideBar extends Login {
 			WebElement homePage = wait
 					.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("Home")));
 			if (homePage.isDisplayed()) {
-				System.out.println("Home Page is displayed successfully.");
+				System.out.println("Home Page is successfully displayed .");
 			}
 		} catch (TimeoutException e) {
 			System.out.println("Home Page not found. Checking for pop-up...");
