@@ -8,11 +8,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
+
 import io.appium.java_client.AppiumBy;
 
 public class Login extends BaseClass {
 	@Test(priority = 1)
 	public void LoginPage() throws MalformedURLException, InterruptedException {
+//		ExtentTest test=extent.createtest("Initial Demo");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		driver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id='android:id/content']")).click();
