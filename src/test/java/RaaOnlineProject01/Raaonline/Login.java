@@ -9,8 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentTest;
-
 import io.appium.java_client.AppiumBy;
 
 public class Login extends BaseClass {

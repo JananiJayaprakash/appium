@@ -8,12 +8,45 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">72,346</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">169,664</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">RaaOnlineProject01.Raaonline.SideBar</td><td><a href="#m0">LoginPage</a></td><td rowspan="1">1743078629586</td><td rowspan="1">18497</td></tr><tr class="passedeven"><td><a href="#m1">SidebarPage</a></td><td rowspan="1">1743078648090</td><td rowspan="1">45916</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RaaOnlineProject01.Raaonline.VideoPage</td><td><a href="#m0">VideoPage01</a></td><td rowspan="1">1743672613661</td><td rowspan="1">69181</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">RaaOnlineProject01.Raaonline.HomePage</td><td><a href="#m1">HomePage001</a></td><td rowspan="1">1743672569475</td><td rowspan="1">8226</td></tr><tr class="passedeven"><td><a href="#m2">LoginPage</a></td><td rowspan="1">1743672551627</td><td rowspan="1">17845</td></tr><tr class="passedodd"><td rowspan="1">RaaOnlineProject01.Raaonline.Login</td><td><a href="#m3">LoginPage</a></td><td rowspan="1">1743672523918</td><td rowspan="1">18435</td></tr><tr class="passedeven"><td rowspan="2">RaaOnlineProject01.Raaonline.VideoPage</td><td><a href="#m4">HomePage001</a></td><td rowspan="1">1743672604643</td><td rowspan="1">9018</td></tr><tr class="passedeven"><td><a href="#m5">LoginPage</a></td><td rowspan="1">1743672586756</td><td rowspan="1">17883</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">RaaOnlineProject01.Raaonline.SideBar#LoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">RaaOnlineProject01.Raaonline.SideBar#SidebarPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">RaaOnlineProject01.Raaonline.VideoPage#VideoPage01</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: AppiumBy.accessibilityId: Anesthesia machine
+14 Topics (tried for 8 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at RaaOnlineProject01.Raaonline.VideoPage.VideoPage01(VideoPage.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e1c9b5bb-8c0c-41bb-9d96-3c3b66422a4f, findElement {value=Anesthesia machine
+14 Topics, using=accessibility id}]
+Capabilities {appium:app: C:\Users\janan\eclipse-work..., appium:appActivity: com.raaonlinedev.app.MainAc..., appium:appPackage: com.raaonlinedev.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\janan\eclipse-work..., automationName: UIAutomator2, deviceName: R9WW30G5FJD, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e1c9b5bb-8c0c-41bb-9d96-3c3b66422a4f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 29 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">RaaOnlineProject01.Raaonline.HomePage#HomePage001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">RaaOnlineProject01.Raaonline.HomePage#LoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RaaOnlineProject01.Raaonline.Login#LoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">RaaOnlineProject01.Raaonline.VideoPage#HomePage001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">RaaOnlineProject01.Raaonline.VideoPage#LoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -6,9 +6,10 @@
 	</listeners>
 	<test thread-count="3" name="Test">
 		<classes>
-			 <class name="RaaOnlineProject01.Raaonline.Login" />
-            <class name="RaaOnlineProject01.Raaonline.Homepage" />
-            <class name="RaaOnlineProject01.Raaonline.Videopage" />
+			<class name="RaaOnlineProject01.Raaonline.Login" />
+			<class name="RaaOnlineProject01.Raaonline.SideBar" />
+			<class name="RaaOnlineProject01.Raaonline.HomePage" />
+			<class name="RaaOnlineProject01.Raaonline.VideoPage" />
 		</classes>
 	</test> <!--
 	Test -->

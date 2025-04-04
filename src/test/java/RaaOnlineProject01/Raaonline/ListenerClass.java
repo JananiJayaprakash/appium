@@ -1,5 +1,7 @@
 package RaaOnlineProject01.Raaonline;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -8,13 +10,13 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class ListenerClass implements ITestListener {
+public class ListenerClass extends BaseClass implements ITestListener {
 	ExtentTest test;
 	static ExtentReports extent = ExtendReportRaaonline.getRepoterObject();
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		ExtentTest test = extent.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getMethod().getMethodName());
 		System.out.println("Test Started: " + result.getName());
 	}
 
@@ -27,6 +29,11 @@ public class ListenerClass implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		test.fail(result.getThrowable());
+		try {
+			test.addScreenCaptureFromPath(getScreenshotPath(result.getMethod().getMethodName(), driver), null);
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
 		System.out.println("Test Failed: " + result.getName());
 	}
 
