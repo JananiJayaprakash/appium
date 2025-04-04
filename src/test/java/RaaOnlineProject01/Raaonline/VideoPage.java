@@ -7,11 +7,9 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 
-@Listeners(ListenerClass.class)
 public class VideoPage extends HomePage {
 
 	@Test(priority = 3)
@@ -62,21 +60,21 @@ public class VideoPage extends HomePage {
 		Thread.sleep(3000);
 
 //		// Video pass and continue...
-//		System.out.println("Checking Video pass and continue... ");
-//		Thread.sleep(3000);
-//		WebElement passandcontinue = wait.until(ExpectedConditions
-//				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 11:48\"]")));
-//		System.out.println("Video pass and continue is working correctly..");
-//		passandcontinue.click();
-//		Thread.sleep(5000);
+		System.out.println("Checking Video pass and continue... ");
+		Thread.sleep(3000);
+		WebElement passandcontinue = wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 11:48\"]")));
+		System.out.println("Video pass and continue is working correctly..");
+		passandcontinue.click();
+		Thread.sleep(5000);
 
 // Video continue watching...
-		System.out.println("Checking continue watching... ");
-		WebElement Continuewatching = wait
-				.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("00:13 / 11:48")));
-		Continuewatching.isDisplayed();
-		System.out.println("continue watching is working correctly..");
-		Thread.sleep(3000);
+//		System.out.println("Checking continue watching... ");
+//		WebElement Continuewatching = wait
+//				.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("00:13 / 11:48")));
+//		Continuewatching.isDisplayed();
+//		System.out.println("continue watching is working correctly..");
+//		Thread.sleep(3000);
 
 // DownLoad Videos..
 		System.out.println("Clicking Download icon.. ");
