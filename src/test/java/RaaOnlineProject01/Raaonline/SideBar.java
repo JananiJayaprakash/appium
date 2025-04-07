@@ -86,7 +86,7 @@ public class SideBar extends Login {
 
 // Open the sidebar
 		WebElement sidebar01 = wait
-				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.ImageView[1]")));
+				.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.widget.ImageView\").instance(0)")));
 		sidebar01.click();
 		System.out.println("Sidebar opened.");
 		Thread.sleep(3000);

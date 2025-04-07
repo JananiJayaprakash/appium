@@ -10,10 +10,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 public class Login extends BaseClass {
+//	@Test(dataProvider="getData",groups= {"Smoke"})
 	@Test(priority = 1)
 	public void LoginPage() throws MalformedURLException, InterruptedException {
+		configureAppium();
 //		ExtentTest test=extent.createtest("Initial Demo");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -42,12 +46,31 @@ public class Login extends BaseClass {
 //        Invalidpassword.click();
 //        Invalidpassword.sendKeys("12345678");
 
-		driver.hideKeyboard();
+//		driver.hideKeyboard();
+		if (driver instanceof AndroidDriver) {
+			((AndroidDriver) driver).hideKeyboard();
+		} else if (driver instanceof IOSDriver) {
+			((IOSDriver) driver).hideKeyboard();
+		}
 
 		// Click Login button
 		System.out.println("Click Login button");
 		WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Login")));
 		loginButton.click();
+		
+	
+
+//		// Click Login button and measure loading time
+//		System.out.println("Clicking Login button...");
+//
+//		long loadingTime = measureLoadingTime(() -> {
+//			WebElement loginButton = wait
+//					.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Login")));
+//			loginButton.click();
+//		}, AppiumBy.accessibilityId("Home")); // Replace with actual home element if different
+//
+//		System.out.println("Login to Home Page Loading Time: " + loadingTime + " ms");
+
 // Check for toast message (Incorrect number or password)
 		try {
 			WebElement toastMessage = wait.until(ExpectedConditions
