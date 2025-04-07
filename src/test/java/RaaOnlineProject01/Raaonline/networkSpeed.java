@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 
 public class networkSpeed extends BaseClass {
 
@@ -47,7 +49,11 @@ public class networkSpeed extends BaseClass {
 		System.out.println("Entering password...");
 		Validpassword.sendKeys("123456");
 
-		driver.hideKeyboard();
+		if (driver instanceof AndroidDriver) {
+			((AndroidDriver) driver).hideKeyboard();
+		} else if (driver instanceof IOSDriver) {
+			((IOSDriver) driver).hideKeyboard();
+		}
 
 		// Click Login button
 		System.out.println("Clicking Login button");

@@ -17,7 +17,6 @@ public class Login extends BaseClass {
 //	@Test(dataProvider="getData",groups= {"Smoke"})
 	@Test(priority = 1)
 	public void LoginPage() throws MalformedURLException, InterruptedException {
-		configureAppium();
 //		ExtentTest test=extent.createtest("Initial Demo");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -57,19 +56,6 @@ public class Login extends BaseClass {
 		System.out.println("Click Login button");
 		WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Login")));
 		loginButton.click();
-		
-	
-
-//		// Click Login button and measure loading time
-//		System.out.println("Clicking Login button...");
-//
-//		long loadingTime = measureLoadingTime(() -> {
-//			WebElement loginButton = wait
-//					.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("Login")));
-//			loginButton.click();
-//		}, AppiumBy.accessibilityId("Home")); // Replace with actual home element if different
-//
-//		System.out.println("Login to Home Page Loading Time: " + loadingTime + " ms");
 
 // Check for toast message (Incorrect number or password)
 		try {

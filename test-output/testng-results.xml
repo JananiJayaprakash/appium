@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-07T12:27:31 IST" name="Default suite" finished-at="2025-04-07T12:28:10 IST" duration-ms="38596">
+  <suite started-at="2025-04-07T13:59:23 IST" name="Default suite" finished-at="2025-04-07T13:59:51 IST" duration-ms="27687">
     <groups>
     </groups>
-    <test started-at="2025-04-07T12:27:31 IST" name="Default test" finished-at="2025-04-07T12:28:10 IST" duration-ms="38596">
-      <class name="RaaOnlineProject01.Raaonline.HomePage">
-        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.HomePage@3bf7ca37]" started-at="2025-04-07T12:27:31 IST" name="LoginPage" finished-at="2025-04-07T12:28:01 IST" duration-ms="29485" status="PASS">
+    <test started-at="2025-04-07T13:59:23 IST" name="Default test" finished-at="2025-04-07T13:59:51 IST" duration-ms="27687">
+      <class name="RaaOnlineProject01.Raaonline.networkSpeed">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.networkSpeed@20d525]" started-at="2025-04-07T13:59:23 IST" name="configureAppium" finished-at="2025-04-07T13:59:32 IST" duration-ms="8845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.networkSpeed@20d525]" started-at="2025-04-07T13:59:32 IST" name="LoginPage" finished-at="2025-04-07T13:59:51 IST" duration-ms="18442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPage -->
-        <test-method signature="HomePage001()[pri:2, instance:RaaOnlineProject01.Raaonline.HomePage@3bf7ca37]" started-at="2025-04-07T12:28:01 IST" name="HomePage001" finished-at="2025-04-07T12:28:10 IST" duration-ms="9064" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.networkSpeed@20d525]" started-at="2025-04-07T13:59:51 IST" name="tearDown" finished-at="2025-04-07T13:59:51 IST" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage001 -->
-      </class> <!-- RaaOnlineProject01.Raaonline.HomePage -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- RaaOnlineProject01.Raaonline.networkSpeed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
