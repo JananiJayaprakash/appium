@@ -6,7 +6,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -19,11 +18,11 @@ import org.apache.commons.io.FileUtils;
 
 public class BaseClass {
 
-//	private static final String FileUtils = null;
+	public static AppiumDriver driver; 
 	public AppiumDriverLocalService service;
-	public AndroidDriver driver;
+//	public AndroidDriver driver;
 
-	@BeforeClass
+	@BeforeClass//(alwaysRun=true)
 	public void configureAppium() throws MalformedURLException {
 
 		service = new AppiumServiceBuilder()
@@ -42,12 +41,17 @@ public class BaseClass {
 
 	public String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException {
 		File source = driver.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
-		FileUtils.copyFile(source, new File(destinationFile));
-		return destinationFile;
+		String destinationFilePath = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
+//		FileUtils.copyFile(source, new File(destinationFile));
+		try {
+	        FileUtils.copyFile(source, new File(destinationFilePath));
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+		return destinationFilePath;
 	}
 
-	@AfterClass
+	@AfterClass//(alwaysRun=true)
 	public void tearDown() {
 		// Quit driver
 		driver.quit();

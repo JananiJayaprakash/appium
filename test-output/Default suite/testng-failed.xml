@@ -8,6 +8,8 @@
           <include name="configureAppium"/>
           <include name="tearDown"/>
           <include name="VideoPage01"/>
+          <include name="HomePage001"/>
+          <include name="LoginPage"/>
         </methods>
       </class> <!-- RaaOnlineProject01.Raaonline.VideoPage -->
     </classes>

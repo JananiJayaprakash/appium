@@ -1,0 +1,2 @@
+App Launch Time: 7596 ms
+App Launch Time: 8612 ms

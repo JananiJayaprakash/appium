@@ -9,8 +9,8 @@
       <class name="RaaOnlineProject01.Raaonline.VideoPage">
         <methods>
           <include name="configureAppium"/>
-          <include name="VideoPage01"/>
           <include name="tearDown"/>
+          <include name="VideoPage01"/>
         </methods>
       </class> <!-- RaaOnlineProject01.Raaonline.VideoPage -->
     </classes>
