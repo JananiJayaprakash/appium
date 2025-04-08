@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 07 12:57:48 IST 2025</td>
+<td>Started on:</td><td>Mon Apr 07 14:10:12 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>254 seconds (254009 ms)</td>
+<tr><td>Total time:</td><td>185 seconds (185695 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,38 +77,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='RaaOnlineProject01.Raaonline.VideoPage.VideoPage01()'><b>VideoPage01</b><br>Test class: RaaOnlineProject01.Raaonline.VideoPage</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.View[@content-desc=&quot;00:00 / 11:48&quot;] (tried for 8 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at RaaOnlineProject01.Raaonline.VideoPage.VideoPage01(VideoPage.java:65)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: MD/DNB Anesthesia (tried for 8 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7750c13-acf2-4839-b8bd-0410f0a6192e, findElement {value=//android.view.View[@content-desc=&quot;00:00 / 11:48&quot;], using=xpath}]
 Capabilities {appium:app: C:\Users\janan\eclipse-work..., appium:appActivity: com.raaonlinedev.app.MainAc..., appium:appPackage: com.raaonlinedev.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\janan\eclipse-work..., automationName: UIAutomator2, deviceName: R9WW30G5FJD, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: d7750c13-acf2-4839-b8bd-0410f0a6192e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1744579245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1744579245'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.View[@content-desc=&quot;00:00 / 11:48&quot;] (tried for 8 second(s) with 500 milliseconds interval)
+Session ID: ef12bcb1-b16b-4f92-8892-c953278e3815
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at RaaOnlineProject01.Raaonline.VideoPage.VideoPage01(VideoPage.java:65)
+	at RaaOnlineProject01.Raaonline.VideoPage.VideoPage01(VideoPage.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1945915791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1945915791'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: MD/DNB Anesthesia (tried for 8 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: C:\Users\janan\eclipse-work..., appium:appActivity: com.raaonlinedev.app.MainAc..., appium:appPackage: com.raaonlinedev.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\janan\eclipse-work..., automationName: UIAutomator2, deviceName: R9WW30G5FJD, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ef12bcb1-b16b-4f92-8892-c953278e3815
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at RaaOnlineProject01.Raaonline.VideoPage.VideoPage01(VideoPage.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,34 +125,8 @@ Session ID: d7750c13-acf2-4839-b8bd-0410f0a6192e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [d7750c13-acf2-4839-b8bd-0410f0a6192e, findElement {value=//android.view.View[@content-desc=&quot;00:00 / 11:48&quot;], using=xpath}]
-Capabilities {appium:app: C:\Users\janan\eclipse-work..., appium:appActivity: com.raaonlinedev.app.MainAc..., appium:appPackage: com.raaonlinedev.app, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\janan\eclipse-work..., automationName: UIAutomator2, deviceName: R9WW30G5FJD, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: d7750c13-acf2-4839-b8bd-0410f0a6192e
-	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
 </pre></div></td>
-<td>44</td>
+<td>17</td>
 <td>RaaOnlineProject01.Raaonline.VideoPage@1ebea008</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -178,8 +140,13 @@ Session ID: d7750c13-acf2-4839-b8bd-0410f0a6192e
 <tr>
 <td title='RaaOnlineProject01.Raaonline.SideBar.SidebarPage()'><b>SidebarPage</b><br>Test class: RaaOnlineProject01.Raaonline.SideBar</td>
 <td></td>
-<td>63</td>
+<td>45</td>
 <td>RaaOnlineProject01.Raaonline.SideBar@72d6b3ba</td></tr>
+<tr>
+<td title='RaaOnlineProject01.Raaonline.VideoPage.HomePage001()'><b>HomePage001</b><br>Test class: RaaOnlineProject01.Raaonline.VideoPage</td>
+<td></td>
+<td>8</td>
+<td>RaaOnlineProject01.Raaonline.VideoPage@1ebea008</td></tr>
 <tr>
 <td title='RaaOnlineProject01.Raaonline.Login.LoginPage()'><b>LoginPage</b><br>Test class: RaaOnlineProject01.Raaonline.Login</td>
 <td></td>
@@ -188,28 +155,23 @@ Session ID: d7750c13-acf2-4839-b8bd-0410f0a6192e
 <tr>
 <td title='RaaOnlineProject01.Raaonline.HomePage.HomePage001()'><b>HomePage001</b><br>Test class: RaaOnlineProject01.Raaonline.HomePage</td>
 <td></td>
-<td>9</td>
+<td>8</td>
 <td>RaaOnlineProject01.Raaonline.HomePage@13df2a8c</td></tr>
+<tr>
+<td title='RaaOnlineProject01.Raaonline.SideBar.LoginPage()'><b>LoginPage</b><br>Test class: RaaOnlineProject01.Raaonline.SideBar</td>
+<td></td>
+<td>18</td>
+<td>RaaOnlineProject01.Raaonline.SideBar@72d6b3ba</td></tr>
 <tr>
 <td title='RaaOnlineProject01.Raaonline.VideoPage.LoginPage()'><b>LoginPage</b><br>Test class: RaaOnlineProject01.Raaonline.VideoPage</td>
 <td></td>
 <td>18</td>
 <td>RaaOnlineProject01.Raaonline.VideoPage@1ebea008</td></tr>
 <tr>
-<td title='RaaOnlineProject01.Raaonline.SideBar.LoginPage()'><b>LoginPage</b><br>Test class: RaaOnlineProject01.Raaonline.SideBar</td>
-<td></td>
-<td>19</td>
-<td>RaaOnlineProject01.Raaonline.SideBar@72d6b3ba</td></tr>
-<tr>
 <td title='RaaOnlineProject01.Raaonline.HomePage.LoginPage()'><b>LoginPage</b><br>Test class: RaaOnlineProject01.Raaonline.HomePage</td>
 <td></td>
-<td>19</td>
+<td>18</td>
 <td>RaaOnlineProject01.Raaonline.HomePage@13df2a8c</td></tr>
-<tr>
-<td title='RaaOnlineProject01.Raaonline.VideoPage.HomePage001()'><b>HomePage001</b><br>Test class: RaaOnlineProject01.Raaonline.VideoPage</td>
-<td></td>
-<td>9</td>
-<td>RaaOnlineProject01.Raaonline.VideoPage@1ebea008</td></tr>
 </table><p>
 </body>
 </html>
