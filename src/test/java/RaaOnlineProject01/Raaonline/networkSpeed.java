@@ -15,9 +15,9 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 
-public class networkSpeed extends BaseClass {
+public class networkSpeed extends performance {
 
-	@Test(priority = 1)
+@Test
 	public void LoginPage() throws MalformedURLException, InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
