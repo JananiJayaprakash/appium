@@ -33,7 +33,8 @@ public class BaseClass {
 		UiAutomator2Options options = new UiAutomator2Options();
 		// options.setDeviceName("Testing");
 		options.setDeviceName("R9WW30G5FJD");
-		options.setApp("C:\\Users\\janan\\eclipse-workspace\\Raaonline\\src\\main\\java\\resourse01\\dev-apk.apk");
+//		options.setApp("C:\\Users\\janan\\eclipse-workspace\\Raaonline\\src\\main\\java\\resourse01\\dev-apk.apk");
+		options.setApp("C:\\Users\\janan\\eclipse-workspace\\Raaonline\\src\\main\\java\\resourse01\\viewplan_apk.apk");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 

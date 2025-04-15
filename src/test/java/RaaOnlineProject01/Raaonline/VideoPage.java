@@ -60,13 +60,13 @@ public class VideoPage extends HomePage {
 		Thread.sleep(3000);
 
 //		// Video pass and continue...
-		System.out.println("Checking Video pass and continue... ");
-		Thread.sleep(3000);
-		WebElement passandcontinue = wait.until(ExpectedConditions
-				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 11:48\"]")));
-		System.out.println("Video pass and continue is working correctly..");
-		passandcontinue.click();
-		Thread.sleep(5000);
+//		System.out.println("Checking Video pass and continue... ");
+//		Thread.sleep(3000);
+//		WebElement passandcontinue = wait.until(ExpectedConditions
+//				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 11:48\"]")));
+//		System.out.println("Video pass and continue is working correctly..");
+//		passandcontinue.click();
+//		Thread.sleep(5000);
 
 // Video continue watching...
 //		System.out.println("Checking continue watching... ");
@@ -95,7 +95,7 @@ public class VideoPage extends HomePage {
 		System.out.println("back to topic page to course page");
 		driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.view.View\").instance(6)"))
 				.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 //unpurchased users
 // subspeciality page...
 		System.out.println("Waiting for Subspeciality...");

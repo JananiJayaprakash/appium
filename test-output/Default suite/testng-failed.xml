@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RaaOnlineProject01.Raaonline.networkSpeed">
+      <class name="RaaOnlineProject01.Raaonline.CreateAccountPage">
         <methods>
           <include name="configureAppium"/>
-          <include name="LoginPage"/>
+          <include name="RegisterPage"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- RaaOnlineProject01.Raaonline.networkSpeed -->
+      </class> <!-- RaaOnlineProject01.Raaonline.CreateAccountPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

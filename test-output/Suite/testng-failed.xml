@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="RaaOnlineProject01.Raaonline.ListenerClass"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Regression(failed)">
     <classes>
       <class name="RaaOnlineProject01.Raaonline.VideoPage">
         <methods>
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- RaaOnlineProject01.Raaonline.VideoPage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->
