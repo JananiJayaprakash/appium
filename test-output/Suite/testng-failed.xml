@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="RaaOnlineProject01.Raaonline.VideoPage">
+      <class name="RaaOnlineProject01.Raaonline.MyCourseViewPlan">
         <methods>
           <include name="configureAppium"/>
           <include name="tearDown"/>
-          <include name="VideoPage01"/>
+          <include name="ViewPlans"/>
+          <include name="HomePage001"/>
         </methods>
-      </class> <!-- RaaOnlineProject01.Raaonline.VideoPage -->
+      </class> <!-- RaaOnlineProject01.Raaonline.MyCourseViewPlan -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

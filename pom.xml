@@ -48,6 +48,11 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.11.0</version>
 		</dependency>
+		<dependency>
+			<groupId>RaaonlineNewProject</groupId>
+			<artifactId>ExtendReports</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<profiles>
