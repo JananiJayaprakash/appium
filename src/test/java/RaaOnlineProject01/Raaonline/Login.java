@@ -80,3 +80,7 @@ public class Login extends BaseClass {
 		// tearDown();
 	}
 }
+//<class name="RaaOnlineProject01.Raaonline.Login" />
+//<class name="RaaOnlineProject01.Raaonline.HomePage" />
+//<class name="RaaOnlineProject01.Raaonline.VideoPage" />
+//<class name="RaaOnlineProject01.Raaonline.SideBar" />

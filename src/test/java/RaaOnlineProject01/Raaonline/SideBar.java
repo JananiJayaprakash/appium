@@ -75,6 +75,11 @@ public class SideBar extends Login {
 		ClickSpeciality.click();
 		System.out.println("Speciality changed successfully");
 		Thread.sleep(3000);
+		
+		System.out.println("Change speciality");
+		WebElement ChangeSpeciality = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"Anesthesia & Critical care \"]")));
+		ChangeSpeciality.click();
 
 //Click Change button...
 		System.out.println("After selected interested speciality now click change button");
@@ -99,11 +104,15 @@ public class SideBar extends Login {
 					.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("Choose your Plan")));
 			ChoosePlan.isDisplayed();
 			System.out.println("Choose plan successful.");
-			WebElement ViewAllPlan = wait01
-					.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("View All Plans")));
-			ViewAllPlan.click();
-			System.out.println("View plan successful loaded.");
-			
+//			WebElement ViewAllPlan = wait01
+//					.until(ExpectedConditions.presenceOfElementLocated(AppiumBy.accessibilityId("View All Plans")));
+//			ViewAllPlan.click();
+//			System.out.println("searching View plan page.");
+////POM			
+//			 factory ViewAllPlan = new factory(driver);
+//		        ViewAllPlan.ChooseYourPlan(); 
+//		        System.out.println("View plan successful loaded.");
+		        
 		} catch (TimeoutException e) {
 			System.out.println("Element not found. Printing page source for debugging:");
 			System.out.println(driver.getPageSource()); // Debugging step

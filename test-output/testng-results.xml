@@ -1,83 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-15T10:58:21 IST" name="Suite" finished-at="2025-04-15T11:02:42 IST" duration-ms="260746">
+  <suite started-at="2025-04-16T18:22:42 IST" name="Suite" finished-at="2025-04-16T18:23:25 IST" duration-ms="43245">
     <groups>
     </groups>
-    <test started-at="2025-04-15T10:58:21 IST" name="Regression" finished-at="2025-04-15T11:02:42 IST" duration-ms="260746">
-      <class name="RaaOnlineProject01.Raaonline.Login">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.Login@747f281]" started-at="2025-04-15T10:58:21 IST" name="configureAppium" finished-at="2025-04-15T10:58:35 IST" duration-ms="13935" status="PASS">
+    <test started-at="2025-04-16T18:22:42 IST" name="Regression" finished-at="2025-04-16T18:23:25 IST" duration-ms="43245">
+      <class name="RaaOnlineProject01.Raaonline.MyCourseViewPlan">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.MyCourseViewPlan@928763c]" started-at="2025-04-16T18:22:42 IST" name="configureAppium" finished-at="2025-04-16T18:22:50 IST" duration-ms="8531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.Login@747f281]" started-at="2025-04-15T10:58:35 IST" name="LoginPage" finished-at="2025-04-15T10:58:54 IST" duration-ms="18954" status="PASS">
+        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.MyCourseViewPlan@928763c]" started-at="2025-04-16T18:22:50 IST" name="LoginPage" finished-at="2025-04-16T18:23:10 IST" duration-ms="19055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.Login@747f281]" started-at="2025-04-15T10:58:54 IST" name="tearDown" finished-at="2025-04-15T10:58:55 IST" duration-ms="427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- RaaOnlineProject01.Raaonline.Login -->
-      <class name="RaaOnlineProject01.Raaonline.VideoPage">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.VideoPage@1ebea008]" started-at="2025-04-15T10:59:35 IST" name="configureAppium" finished-at="2025-04-15T10:59:47 IST" duration-ms="12653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAppium -->
-        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.VideoPage@1ebea008]" started-at="2025-04-15T10:59:47 IST" name="LoginPage" finished-at="2025-04-15T11:00:06 IST" duration-ms="18800" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPage -->
-        <test-method signature="HomePage001()[pri:2, instance:RaaOnlineProject01.Raaonline.VideoPage@1ebea008]" started-at="2025-04-15T11:00:06 IST" name="HomePage001" finished-at="2025-04-15T11:00:15 IST" duration-ms="9112" status="PASS">
+        <test-method signature="HomePage001()[pri:2, instance:RaaOnlineProject01.Raaonline.MyCourseViewPlan@928763c]" started-at="2025-04-16T18:23:10 IST" name="HomePage001" finished-at="2025-04-16T18:23:19 IST" duration-ms="9206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage001 -->
-        <test-method signature="VideoPage01()[pri:3, instance:RaaOnlineProject01.Raaonline.VideoPage@1ebea008]" started-at="2025-04-15T11:00:15 IST" name="VideoPage01" finished-at="2025-04-15T11:01:27 IST" duration-ms="71265" status="PASS">
+        <test-method signature="ViewPlans()[pri:3, instance:RaaOnlineProject01.Raaonline.MyCourseViewPlan@928763c]" started-at="2025-04-16T18:23:19 IST" name="ViewPlans" finished-at="2025-04-16T18:23:25 IST" duration-ms="5999" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VideoPage01 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.VideoPage@1ebea008]" started-at="2025-04-15T11:01:27 IST" name="tearDown" finished-at="2025-04-15T11:01:27 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- RaaOnlineProject01.Raaonline.VideoPage -->
-      <class name="RaaOnlineProject01.Raaonline.SideBar">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.SideBar@72d6b3ba]" started-at="2025-04-15T11:01:27 IST" name="configureAppium" finished-at="2025-04-15T11:01:38 IST" duration-ms="11674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAppium -->
-        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.SideBar@72d6b3ba]" started-at="2025-04-15T11:01:38 IST" name="LoginPage" finished-at="2025-04-15T11:01:57 IST" duration-ms="18692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPage -->
-        <test-method signature="SidebarPage()[pri:2, instance:RaaOnlineProject01.Raaonline.SideBar@72d6b3ba]" started-at="2025-04-15T11:01:57 IST" name="SidebarPage" finished-at="2025-04-15T11:02:42 IST" duration-ms="44556" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SidebarPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.SideBar@72d6b3ba]" started-at="2025-04-15T11:02:42 IST" name="tearDown" finished-at="2025-04-15T11:02:42 IST" duration-ms="510" status="PASS">
+        </test-method> <!-- ViewPlans -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.MyCourseViewPlan@928763c]" started-at="2025-04-16T18:23:25 IST" name="tearDown" finished-at="2025-04-16T18:23:25 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RaaOnlineProject01.Raaonline.SideBar -->
-      <class name="RaaOnlineProject01.Raaonline.HomePage">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:RaaOnlineProject01.Raaonline.HomePage@13df2a8c]" started-at="2025-04-15T10:58:55 IST" name="configureAppium" finished-at="2025-04-15T10:59:06 IST" duration-ms="11261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAppium -->
-        <test-method signature="LoginPage()[pri:1, instance:RaaOnlineProject01.Raaonline.HomePage@13df2a8c]" started-at="2025-04-15T10:59:06 IST" name="LoginPage" finished-at="2025-04-15T10:59:25 IST" duration-ms="18901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginPage -->
-        <test-method signature="HomePage001()[pri:2, instance:RaaOnlineProject01.Raaonline.HomePage@13df2a8c]" started-at="2025-04-15T10:59:25 IST" name="HomePage001" finished-at="2025-04-15T10:59:34 IST" duration-ms="9503" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RaaOnlineProject01.Raaonline.HomePage@13df2a8c]" started-at="2025-04-15T10:59:34 IST" name="tearDown" finished-at="2025-04-15T10:59:35 IST" duration-ms="440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- RaaOnlineProject01.Raaonline.HomePage -->
+      </class> <!-- RaaOnlineProject01.Raaonline.MyCourseViewPlan -->
     </test> <!-- Regression -->
   </suite> <!-- Suite -->
 </testng-results>
