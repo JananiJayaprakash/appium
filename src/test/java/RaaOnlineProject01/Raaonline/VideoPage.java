@@ -59,14 +59,14 @@ public class VideoPage extends HomePage {
 		System.out.println("Video Title is displayed correctly..");
 		Thread.sleep(3000);
 
-//		// Video pass and continue...
-//		System.out.println("Checking Video pass and continue... ");
-//		Thread.sleep(3000);
-//		WebElement passandcontinue = wait.until(ExpectedConditions
-//				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 11:48\"]")));
-//		System.out.println("Video pass and continue is working correctly..");
-//		passandcontinue.click();
-//		Thread.sleep(5000);
+// Video pass and continue...
+		System.out.println("Checking Video pass and continue... ");
+		Thread.sleep(3000);
+		WebElement passandcontinue = wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("//android.view.View[contains(@content-desc, '/')]/android.view.View[3]")));
+		System.out.println("Video pass and continue is working correctly..");
+		passandcontinue.click();
+		Thread.sleep(5000);
 
 // Video continue watching...
 //		System.out.println("Checking continue watching... ");
@@ -103,6 +103,10 @@ public class VideoPage extends HomePage {
 		WebElement Subspeciality01 = wait
 				.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("MD/DNB Anesthesia")));
 		Subspeciality01.click();
+		Thread.sleep(3000);
+		WebElement Subspeciality02 = wait
+				.until(ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("MD/DNB Anesthesia")));
+		Subspeciality02.click();
 		System.out.println("Subspeciality successfully loaded...");
 		Thread.sleep(3000);
 
@@ -149,7 +153,7 @@ public class VideoPage extends HomePage {
 		System.out.println("Checking Video pass and continue... ");
 		Thread.sleep(3000);
 		WebElement passandcontinue01 = wait.until(ExpectedConditions
-				.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"00:00 / 36:02\"]")));
+				.presenceOfElementLocated(By.xpath("//android.view.View[contains(@content-desc, '/')]/android.view.View[3]")));
 		System.out.println("Video pass and continue is working correctly..");
 		passandcontinue01.click();
 		Thread.sleep(5000);
